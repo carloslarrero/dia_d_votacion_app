@@ -46,6 +46,18 @@ class _PrincipalPageState extends State<PrincipalPage> {
       'marcado': false,
     },
     {
+      'nombre': 'Amarilla Lorenzo',
+      'cedula': '840.271',
+      'mesa': '1',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Amarilla Amarilla Veronica Beatriz',
+      'cedula': '5.158.252',
+      'mesa': '1',
+      'marcado': false,
+    },
+    {
       'nombre': 'Amarilla Cespedes Julian',
       'cedula': '4.498.705',
       'mesa': '1',
@@ -567,7 +579,7 @@ class _PrincipalPageState extends State<PrincipalPage> {
             padding: const EdgeInsets.only(top: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
+              children: [
                 Text(
                   '<',
                   style: TextStyle(
@@ -586,12 +598,20 @@ class _PrincipalPageState extends State<PrincipalPage> {
                   ),
                 ),
                 SizedBox(width: 20),
-                Text(
-                  '>',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 50,
-                    fontWeight: FontWeight.bold,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => BarrioFatima()),
+                    );
+                  },
+                  child: Text(
+                    '>',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 50,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ],
