@@ -124,6 +124,12 @@ class _PrincipalPageState extends State<PrincipalPage> {
       'marcado': false,
     },
     {
+      'nombre': 'Cabrera Maciel Yonatan Dejesus',
+      'cedula': '7.693.317',
+      'mesa': '2',
+      'marcado': false,
+    },
+    {
       'nombre': 'Cantero Zarza Victor Ramon',
       'cedula': '3.701.922',
       'mesa': '2',
@@ -580,14 +586,14 @@ class _PrincipalPageState extends State<PrincipalPage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                /*Text(
                   '<',
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 50,
                     fontWeight: FontWeight.bold,
                   ),
-                ),
+                ),*/
                 SizedBox(width: 20),
                 Text(
                   'Barrio San Juan',

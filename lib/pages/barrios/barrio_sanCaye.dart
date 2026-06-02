@@ -1,239 +1,53 @@
 import 'package:app_votacion_day/barril.dart';
 
-class BarrioCaacupe extends StatefulWidget {
-  const BarrioCaacupe({super.key});
+class BarrioSanCaye extends StatefulWidget {
+  const BarrioSanCaye({super.key});
 
   @override
-  State<BarrioCaacupe> createState() => _BarrioCaacupeState();
+  State<BarrioSanCaye> createState() => _BarrioSanCayeState();
 }
 
-class _BarrioCaacupeState extends State<BarrioCaacupe> {
+class _BarrioSanCayeState extends State<BarrioSanCaye> {
   final List<Map<String, dynamic>> _votantes = [
     {
-      'nombre': 'Acosta De Gonzalez Celestina',
-      'cedula': '610.484',
-      'mesa': '1',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Amarilla Aquino Luis Angel',
-      'cedula': '1.293.156',
-      'mesa': '1',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Amarilla Barreto Cristino',
-      'cedula': '4.213.320',
-      'mesa': '1',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Amarilla Barreto Eulalio',
-      'cedula': '4.401.623',
-      'mesa': '1',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Amarilla Espinola Pedro Alcides',
-      'cedula': '1.041.617',
-      'mesa': '1',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Ayala De Imas Sebastiana Aparicia',
-      'cedula': '1.011.356',
-      'mesa': '1',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Barreto De Amarilla Lucia Serafina',
-      'cedula': '2.860.770',
-      'mesa': '2',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Benitez Brahian Ezequiel',
-      'cedula': '7.065.617',
-      'mesa': '2',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Benitez Camila Belen',
-      'cedula': '7.045.271',
-      'mesa': '2',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Benitez Celia Beatriz',
-      'cedula': '3.546.385',
-      'mesa': '2',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Caballero Carlos Willian',
-      'cedula': '5.535.309',
-      'mesa': '2',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Cuenca Martinez Mariana Elizabeth',
-      'cedula': '4.978.044',
+      'nombre': 'Fernandez Florentin Fabian',
+      'cedula': '5.734.914',
       'mesa': '3',
       'marcado': false,
     },
     {
-      'nombre': 'Cuenca Martinez Sergio Enmanuel',
-      'cedula': '6.280.479',
+      'nombre': 'Fernandez Florentin Tatiana',
+      'cedula': '5.734.921',
       'mesa': '3',
       'marcado': false,
     },
     {
-      'nombre': 'Galeano Teresa Dionicia',
-      'cedula': '669.692',
-      'mesa': '4',
+      'nombre': 'Fernandez Valdez Vicente',
+      'cedula': '2.335.308',
+      'mesa': '3',
       'marcado': false,
     },
     {
-      'nombre': 'Gimenez Paredes Susana Elizabeth',
-      'cedula': '2.459.479',
-      'mesa': '4',
+      'nombre': 'Florentin De Fernandez Ramona',
+      'cedula': '2.365.790',
+      'mesa': '3',
       'marcado': false,
     },
     {
-      'nombre': 'Gonzalez Acosta Marcos Ivan',
-      'cedula': '3.660.672',
-      'mesa': '4',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Gonzalez Ortiz Hipolito Caciano',
-      'cedula': '814.829',
-      'mesa': '4',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Imas Larre Ruben Ignacio',
-      'cedula': '890.059',
+      'nombre': 'Gutierrez Medina Jose Higinio',
+      'cedula': '5.167.709',
       'mesa': '5',
       'marcado': false,
     },
     {
-      'nombre': 'Komarek Hatlewski Juan Carlos',
-      'cedula': '2.900.644',
-      'mesa': '5',
+      'nombre': 'Soto Fernandez Nora Beatriz',
+      'cedula': '1.180.086',
+      'mesa': '8',
       'marcado': false,
     },
     {
-      'nombre': 'Komarek Markowicz Helen Lariza',
-      'cedula': '5.019.148',
-      'mesa': '5',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Larre Caballero Eduardo Rafael',
-      'cedula': '3.557.153',
-      'mesa': '5',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Larre Gonzalez Maria Alejandra',
-      'cedula': '4.846.473',
-      'mesa': '5',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Larre Gonzalez Silvana Maria',
-      'cedula': '5.869.245',
-      'mesa': '5',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Larre Quiñonez Livio Gustavo',
-      'cedula': '354.935',
-      'mesa': '5',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Larre Quiñonez Hugo Agustin',
-      'cedula': '1.133.701',
-      'mesa': '5',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Larre Quiñonez Maglio Waldino',
-      'cedula': '840.210',
-      'mesa': '5',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Maciel Gimenez Marian Marcela',
-      'cedula': '3.471.720',
-      'mesa': '5',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Maciel  Gimenez Mirna Raquel',
-      'cedula': '3.836.533',
-      'mesa': '5',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Maciel Godoy Sara Ofelia',
-      'cedula': '.872.196',
-      'mesa': '5',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Maciel Yapari Maria Estelvina',
-      'cedula': '2.163.437',
-      'mesa': '5',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Maidana De Bolla Lidia Sirsa',
-      'cedula': '2.456.021',
-      'mesa': '5',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Maudslay Galeano Arturo Sebastian',
-      'cedula': '3.818.766',
-      'mesa': '5',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Maudslay Galeano Felipe Leonardo',
-      'cedula': '5.263.103',
-      'mesa': '5',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Maudslay Galeano Ilse Tatiana',
-      'cedula': '3.692.485',
-      'mesa': '5',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Pereira Oribe Ismael Eliezer',
-      'cedula': '6.372.245',
-      'mesa': '7',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Quiñonez Sanchez Vicente Abdon',
-      'cedula': '912.640',
-      'mesa': '7',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Romero Gonzalez Maria Jose',
-      'cedula': '3.806.506',
-      'mesa': '7',
-      'marcado': false,
-    },
-    {
-      'nombre': 'Zaracho Araujo Elva',
-      'cedula': '2.860.710',
+      'nombre': 'Valenzuela Romero Alba Graciela',
+      'cedula': '653.284',
       'mesa': '8',
       'marcado': false,
     },
@@ -337,7 +151,7 @@ class _BarrioCaacupeState extends State<BarrioCaacupe> {
                 ),
                 SizedBox(width: 20),
                 Text(
-                  'Barrio Caacupe',
+                  'Barrio San Cayetano',
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 30,
@@ -349,9 +163,7 @@ class _BarrioCaacupeState extends State<BarrioCaacupe> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(
-                        builder: (context) => BarrioSanMiguel(),
-                      ),
+                      MaterialPageRoute(builder: (context) => Companias()),
                     );
                   },
                   child: Text(
