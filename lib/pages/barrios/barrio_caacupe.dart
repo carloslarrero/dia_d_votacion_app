@@ -1,7 +1,9 @@
 import 'package:app_votacion_day/barril.dart';
 
 class BarrioCaacupe extends StatefulWidget {
-  const BarrioCaacupe({super.key});
+  final VoidCallback onBack;
+  final VoidCallback onNext;
+  const BarrioCaacupe({super.key, required this.onBack, required this.onNext});
 
   @override
   State<BarrioCaacupe> createState() => _BarrioCaacupeState();
@@ -246,6 +248,25 @@ class _BarrioCaacupeState extends State<BarrioCaacupe> {
   void initState() {
     super.initState();
     _votantesFiltrados = _votantes;
+    _cargarEstadoLocal();
+  }
+
+  Future<void> _cargarEstadoLocal() async {
+    final prefs = await SharedPreferences.getInstance();
+    setState(() {
+      for (var votante in _votantes) {
+        votante['marcado'] = prefs.getBool(votante['cedula']) ?? false;
+      }
+      _votantesFiltrados = List.from(_votantes);
+      if (_searchController.text.isNotEmpty) {
+        _filtrarVotantes(_searchController.text);
+      }
+    });
+  }
+
+  Future<void> _guardarEstadoLocal(String cedula, bool valor) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(cedula, valor);
   }
 
   void _filtrarVotantes(String query) {
@@ -286,11 +307,12 @@ class _BarrioCaacupeState extends State<BarrioCaacupe> {
               ),
             ),
             TextButton(
-              onPressed: () {
+              onPressed: () async {
                 setState(() {
                   votante['marcado'] = false;
                 });
-                Navigator.pop(context);
+                await _guardarEstadoLocal(votante['cedula'], false);
+                if (context.mounted) Navigator.pop(context);
               },
               child: const Text(
                 'Sí',
@@ -323,9 +345,7 @@ class _BarrioCaacupeState extends State<BarrioCaacupe> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 GestureDetector(
-                  onTap: () {
-                    Navigator.pop(context);
-                  },
+                  onTap: widget.onBack,
                   child: Text(
                     '<',
                     style: TextStyle(
@@ -346,14 +366,7 @@ class _BarrioCaacupeState extends State<BarrioCaacupe> {
                 ),
                 SizedBox(width: 20),
                 GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => BarrioSanMiguel(),
-                      ),
-                    );
-                  },
+                  onTap: widget.onNext,
                   child: Text(
                     '>',
                     style: TextStyle(
@@ -379,7 +392,7 @@ class _BarrioCaacupeState extends State<BarrioCaacupe> {
                   color: Color.fromARGB(255, 177, 12, 0),
                 ),
                 filled: true,
-                fillColor: Colors.white70,
+                fillColor: Colors.grey[300],
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
                   borderSide: BorderSide.none,
@@ -456,11 +469,12 @@ class _BarrioCaacupeState extends State<BarrioCaacupe> {
           Checkbox(
             activeColor: const Color.fromARGB(255, 177, 12, 0),
             value: votante['marcado'],
-            onChanged: (bool? valorNuevo) {
+            onChanged: (bool? valorNuevo) async {
               if (valorNuevo == true) {
                 setState(() {
                   votante['marcado'] = true;
                 });
+                await _guardarEstadoLocal(votante['cedula'], true);
               } else {
                 _mostrarAlertaDesmarcar(context, votante);
               }

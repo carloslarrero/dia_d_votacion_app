@@ -1,3 +1,5 @@
+import 'package:app_votacion_day/contenedorBarrios.dart';
+
 import 'barril.dart';
 
 void main() {
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'App dia D',
-      home: PrincipalPage(),
+      home: ContenedorBarrios(),
     );
   }
 }
