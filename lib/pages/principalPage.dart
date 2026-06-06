@@ -65,8 +65,20 @@ class _PrincipalPageState extends State<PrincipalPage> {
       'marcado': false,
     },
     {
-      'nombre': 'Amarilla De Ulon Maura Idalina',
+      'nombre': 'Amarilla De Ullon Maura Idalina',
       'cedula': '840.207',
+      'mesa': '1',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Amarilla Baez Maria Claudelina',
+      'cedula': '3.593.534',
+      'mesa': '1',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Amarilla Mereles Junior Fernando',
+      'cedula': '4.774.967',
       'mesa': '1',
       'marcado': false,
     },
@@ -173,6 +185,12 @@ class _PrincipalPageState extends State<PrincipalPage> {
       'marcado': false,
     },
     {
+      'nombre': 'Figueredo Medina Juan Daniel',
+      'cedula': '7.628.228',
+      'mesa': '3',
+      'marcado': false,
+    },
+    {
       'nombre': 'Gasparini Espinola Mario Roberto',
       'cedula': '1.480.770',
       'mesa': '4',
@@ -187,6 +205,12 @@ class _PrincipalPageState extends State<PrincipalPage> {
     {
       'nombre': 'Gimenez Analia',
       'cedula': '7.693.044',
+      'mesa': '4',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Gimenez Maria Laura',
+      'cedula': '7.271.108',
       'mesa': '4',
       'marcado': false,
     },
@@ -235,6 +259,12 @@ class _PrincipalPageState extends State<PrincipalPage> {
     {
       'nombre': 'Gimenez Mereles Luis Javier',
       'cedula': '2.634.733',
+      'mesa': '4',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Gimenez Sotelo Ramon',
+      'cedula': '1.402.393',
       'mesa': '4',
       'marcado': false,
     },
@@ -341,6 +371,12 @@ class _PrincipalPageState extends State<PrincipalPage> {
       'marcado': false,
     },
     {
+      'nombre': 'Medina Clara Lorena',
+      'cedula': '4.277.848',
+      'mesa': '6',
+      'marcado': false,
+    },
+    {
       'nombre': 'Medina Flores Jesus Manuel',
       'cedula': '6.934.552',
       'mesa': '6',
@@ -367,6 +403,12 @@ class _PrincipalPageState extends State<PrincipalPage> {
     {
       'nombre': 'Paredes Amarilla Ruben',
       'cedula': '1.621.374',
+      'mesa': '7',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Paredes Suarez Paola Elizabeth',
+      'cedula': '5.974.648',
       'mesa': '7',
       'marcado': false,
     },
@@ -506,6 +548,8 @@ class _PrincipalPageState extends State<PrincipalPage> {
 
   List<Map<String, dynamic>> _votantesFiltrados = [];
   final TextEditingController _searchController = TextEditingController();
+  int get _totalVotantes => _votantes.length;
+  int get _totalMarcados => _votantes.where((v) => v['marcado'] == true).length;
 
   @override
   void initState() {
@@ -668,6 +712,34 @@ class _PrincipalPageState extends State<PrincipalPage> {
                     ],
                   );
                 }).toList(),
+              ),
+            ),
+          ),
+          Container(
+            color: Colors.white,
+            padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 15),
+            child: SafeArea(
+              top: false, // Evita margen superior innecesario en Mac/iOS
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Total Votantes: $_totalVotantes',
+                    style: const TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black87,
+                    ),
+                  ),
+                  Text(
+                    'Votados: $_totalMarcados',
+                    style: const TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(255, 177, 12, 0),
+                    ),
+                  ),
+                ],
               ),
             ),
           ),

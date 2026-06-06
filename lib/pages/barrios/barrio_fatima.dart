@@ -237,6 +237,8 @@ class _BarrioFatimaState extends State<BarrioFatima> {
 
   List<Map<String, dynamic>> _votantesFiltrados = [];
   final TextEditingController _searchController = TextEditingController();
+  int get _totalVotantes => _votantes.length;
+  int get _totalMarcados => _votantes.where((v) => v['marcado'] == true).length;
 
   @override
   void initState() {
@@ -410,6 +412,34 @@ class _BarrioFatimaState extends State<BarrioFatima> {
                     ],
                   );
                 }).toList(),
+              ),
+            ),
+          ),
+          Container(
+            color: Colors.white,
+            padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 15),
+            child: SafeArea(
+              top: false, // Evita margen superior innecesario en Mac/iOS
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Total Votantes: $_totalVotantes',
+                    style: const TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black87,
+                    ),
+                  ),
+                  Text(
+                    'Votados: $_totalMarcados',
+                    style: const TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(255, 177, 12, 0),
+                    ),
+                  ),
+                ],
               ),
             ),
           ),

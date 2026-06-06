@@ -11,8 +11,38 @@ class Companias extends StatefulWidget {
 class _CompaniasState extends State<Companias> {
   final List<Map<String, dynamic>> _votantes = [
     {
+      'nombre': 'Aguilera Noguera Ireneo - SR',
+      'cedula': '1.065.092',
+      'mesa': '1',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Aguilera Valdez Fredy Ramon - SR',
+      'cedula': '3.211.868',
+      'mesa': '1',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Amarilla Torres Marilin Elizabeth - SR',
+      'cedula': '7.310.581',
+      'mesa': '1',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Barreto Fretes Victor Hugo - SR',
+      'cedula': '4.906.379',
+      'mesa': '2',
+      'marcado': false,
+    },
+    {
       'nombre': 'Bolla Acosta Blanca Sabina - SI',
       'cedula': '1.229.645',
+      'mesa': '2',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Bordon Miguel - SR',
+      'cedula': '1.610.476',
       'mesa': '2',
       'marcado': false,
     },
@@ -23,9 +53,33 @@ class _CompaniasState extends State<Companias> {
       'marcado': false,
     },
     {
+      'nombre': 'Cabral Benitez Elbio Daniel - SR',
+      'cedula': '5.456.677',
+      'mesa': '2',
+      'marcado': false,
+    },
+    {
       'nombre': 'Caceres Aranda Sunilda - SF',
       'cedula': '2.930.766',
       'mesa': '2',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Dankievicz Buczynki Miguel - SR',
+      'cedula': '1.397.249',
+      'mesa': '3',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Espinola De Valdez Maria Antonia - SR',
+      'cedula': '2.380.437',
+      'mesa': '3',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Fleitas Gauto Roque Antonio - SR',
+      'cedula': '4.565.778',
+      'mesa': '3',
       'marcado': false,
     },
     {
@@ -59,6 +113,24 @@ class _CompaniasState extends State<Companias> {
       'marcado': false,
     },
     {
+      'nombre': 'Fretes Juan Ramon - SR',
+      'cedula': '4.265.049',
+      'mesa': '4',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Gauto Eusebio Asuncion - SR',
+      'cedula': '1.083.034',
+      'mesa': '4',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Gauto Britez Ariel - SR',
+      'cedula': '5.452.875',
+      'mesa': '4',
+      'marcado': false,
+    },
+    {
       'nombre': 'Lopez Caceres Delia Mabel - SF',
       'cedula': '6.236.517',
       'mesa': '5',
@@ -68,6 +140,12 @@ class _CompaniasState extends State<Companias> {
       'nombre': 'Lopez Romero Antonio Evaristo - SF',
       'cedula': '1.572.026',
       'mesa': '5',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Ortiz Allende Victor Luis - SR',
+      'cedula': '1.279.102',
+      'mesa': '6',
       'marcado': false,
     },
     {
@@ -83,6 +161,24 @@ class _CompaniasState extends State<Companias> {
       'marcado': false,
     },
     {
+      'nombre': 'Valdez Espinola Luis Alberto - SR',
+      'cedula': '1.704.094',
+      'mesa': '8',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Valdez De Aguilera Maria Arminda - SR',
+      'cedula': '1.474.185',
+      'mesa': '8',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Valdez Romero Amado - SR',
+      'cedula': '1.636.440',
+      'mesa': '8',
+      'marcado': false,
+    },
+    {
       'nombre': 'Villalba De Franco Rosalina - SR',
       'cedula': '2.857.349',
       'mesa': '8',
@@ -92,6 +188,8 @@ class _CompaniasState extends State<Companias> {
 
   List<Map<String, dynamic>> _votantesFiltrados = [];
   final TextEditingController _searchController = TextEditingController();
+  int get _totalVotantes => _votantes.length;
+  int get _totalMarcados => _votantes.where((v) => v['marcado'] == true).length;
 
   @override
   void initState() {
@@ -254,6 +352,34 @@ class _CompaniasState extends State<Companias> {
                     ],
                   );
                 }).toList(),
+              ),
+            ),
+          ),
+          Container(
+            color: Colors.white,
+            padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 15),
+            child: SafeArea(
+              top: false, // Evita margen superior innecesario en Mac/iOS
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Total Votantes: $_totalVotantes',
+                    style: const TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black87,
+                    ),
+                  ),
+                  Text(
+                    'Votados: $_totalMarcados',
+                    style: const TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(255, 177, 12, 0),
+                    ),
+                  ),
+                ],
               ),
             ),
           ),

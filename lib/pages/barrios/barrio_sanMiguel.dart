@@ -28,8 +28,20 @@ class _BarrioSanMiguelState extends State<BarrioSanMiguel> {
       'marcado': false,
     },
     {
+      'nombre': 'Amarilla De Irigartia Luisa Ester',
+      'cedula': '2.800.989',
+      'mesa': '1',
+      'marcado': false,
+    },
+    {
       'nombre': 'Arevalos Rodriguez Marcelino',
       'cedula': '5.263.126',
+      'mesa': '1',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Arevalos Cristino',
+      'cedula': '1.016.646',
       'mesa': '1',
       'marcado': false,
     },
@@ -145,6 +157,8 @@ class _BarrioSanMiguelState extends State<BarrioSanMiguel> {
 
   List<Map<String, dynamic>> _votantesFiltrados = [];
   final TextEditingController _searchController = TextEditingController();
+  int get _totalVotantes => _votantes.length;
+  int get _totalMarcados => _votantes.where((v) => v['marcado'] == true).length;
 
   @override
   void initState() {
@@ -318,6 +332,34 @@ class _BarrioSanMiguelState extends State<BarrioSanMiguel> {
                     ],
                   );
                 }).toList(),
+              ),
+            ),
+          ),
+          Container(
+            color: Colors.white,
+            padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 15),
+            child: SafeArea(
+              top: false, // Evita margen superior innecesario en Mac/iOS
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Total Votantes: $_totalVotantes',
+                    style: const TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black87,
+                    ),
+                  ),
+                  Text(
+                    'Votados: $_totalMarcados',
+                    style: const TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(255, 177, 12, 0),
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
