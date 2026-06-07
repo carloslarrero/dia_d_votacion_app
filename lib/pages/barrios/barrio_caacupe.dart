@@ -42,9 +42,27 @@ class _BarrioCaacupeState extends State<BarrioCaacupe> {
       'marcado': false,
     },
     {
+      'nombre': 'Amarilla Maidana Alberto',
+      'cedula': '4.882.972',
+      'mesa': '1',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Amarilla Ortiz Yennifer Haidee',
+      'cedula': '6.027.037',
+      'mesa': '1',
+      'marcado': false,
+    },
+    {
       'nombre': 'Ayala De Imas Sebastiana Aparicia',
       'cedula': '1.011.356',
       'mesa': '1',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Baez De Gutierrez Maria Elcida',
+      'cedula': '1.229.671',
+      'mesa': '2',
       'marcado': false,
     },
     {
@@ -92,6 +110,12 @@ class _BarrioCaacupeState extends State<BarrioCaacupe> {
     {
       'nombre': 'Galeano Teresa Dionicia',
       'cedula': '669.692',
+      'mesa': '4',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Gimenez De Romero Francisca Graciela',
+      'cedula': '840.196',
       'mesa': '4',
       'marcado': false,
     },
@@ -198,6 +222,12 @@ class _BarrioCaacupeState extends State<BarrioCaacupe> {
       'marcado': false,
     },
     {
+      'nombre': 'Martinez De Gimenez Roque Rufina',
+      'cedula': '2.459.500',
+      'mesa': '5',
+      'marcado': false,
+    },
+    {
       'nombre': 'Maudslay Galeano Arturo Sebastian',
       'cedula': '3.818.766',
       'mesa': '5',
@@ -234,8 +264,20 @@ class _BarrioCaacupeState extends State<BarrioCaacupe> {
       'marcado': false,
     },
     {
+      'nombre': 'Romero Encina Walter Jose',
+      'cedula': '387.974',
+      'mesa': '7',
+      'marcado': false,
+    },
+    {
       'nombre': 'Sanchez Roldan Lucia Esther',
       'cedula': '6.343.768',
+      'mesa': '8',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Valdez Gomez Maria Esperanza',
+      'cedula': '1.945.128',
       'mesa': '8',
       'marcado': false,
     },

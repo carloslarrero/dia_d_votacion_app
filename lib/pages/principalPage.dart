@@ -143,6 +143,30 @@ class _PrincipalPageState extends State<PrincipalPage> {
       'marcado': false,
     },
     {
+      'nombre': 'Cabrera Amarilla Pablo Anibal',
+      'cedula': '5.270.002',
+      'mesa': '2',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Cabral Lucas Javier',
+      'cedula': '4.490.438',
+      'mesa': '2',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Cabral Liz Rosalva',
+      'cedula': '4.490.437',
+      'mesa': '2',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Cabral Maria Ignacia',
+      'cedula': '870.226',
+      'mesa': '2',
+      'marcado': false,
+    },
+    {
       'nombre': 'Cantero Zarza Victor Ramon',
       'cedula': '3.701.922',
       'mesa': '2',
@@ -175,6 +199,12 @@ class _PrincipalPageState extends State<PrincipalPage> {
     {
       'nombre': 'Cespedes Pereira Nazario',
       'cedula': '2.257.076',
+      'mesa': '3',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Cespedes Cabrera Fernando',
+      'cedula': '6.107.901',
       'mesa': '3',
       'marcado': false,
     },
@@ -287,6 +317,12 @@ class _PrincipalPageState extends State<PrincipalPage> {
       'marcado': false,
     },
     {
+      'nombre': 'Gonzalez Maudslay Pura Concepcion',
+      'cedula': '441.892',
+      'mesa': '4',
+      'marcado': false,
+    },
+    {
       'nombre': 'Gonzalez Maudslay Santiago',
       'cedula': '674.126',
       'mesa': '4',
@@ -341,6 +377,12 @@ class _PrincipalPageState extends State<PrincipalPage> {
       'marcado': false,
     },
     {
+      'nombre': 'Maciel Maria Concepcion',
+      'cedula': '2.301.610',
+      'mesa': '5',
+      'marcado': false,
+    },
+    {
       'nombre': 'Mancuello Amarilla Maria Hermelinda',
       'cedula': '4.498.713',
       'mesa': '5',
@@ -371,6 +413,12 @@ class _PrincipalPageState extends State<PrincipalPage> {
       'marcado': false,
     },
     {
+      'nombre': 'Medina Cabral Maulio',
+      'cedula': '3.232.006',
+      'mesa': '6',
+      'marcado': false,
+    },
+    {
       'nombre': 'Medina Clara Lorena',
       'cedula': '4.277.848',
       'mesa': '6',
@@ -383,7 +431,13 @@ class _PrincipalPageState extends State<PrincipalPage> {
       'marcado': false,
     },
     {
-      'nombre': 'Merreles Velazquez Fidelina Maria',
+      'nombre': 'Medina Sanabria Pedro Maulio',
+      'cedula': '7.395.693',
+      'mesa': '6',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Mereles Velazquez Fidelina Maria',
       'cedula': '1.662.220',
       'mesa': '6',
       'marcado': false,
@@ -391,6 +445,18 @@ class _PrincipalPageState extends State<PrincipalPage> {
     {
       'nombre': 'Mongelos Mereles Reinaldo Basilio',
       'cedula': '4.963.667',
+      'mesa': '6',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Mora Galeano Denis Ariel Junior',
+      'cedula': '6.802.420',
+      'mesa': '6',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Mora Galeano Francisca Carolina',
+      'cedula': '4.025.326',
       'mesa': '6',
       'marcado': false,
     },

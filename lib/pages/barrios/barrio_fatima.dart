@@ -102,8 +102,20 @@ class _BarrioFatimaState extends State<BarrioFatima> {
       'marcado': false,
     },
     {
+      'nombre': 'Maciel Barrios Jorgelina Mabel',
+      'cedula': '2.014.707',
+      'mesa': '5',
+      'marcado': false,
+    },
+    {
       'nombre': 'Maidana De Zarza Maria Esperanza',
       'cedula': '2.860.711',
+      'mesa': '5',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Martinez Gimenez Juan Ruperto',
+      'cedula': '2.961.299',
       'mesa': '5',
       'marcado': false,
     },
@@ -156,6 +168,12 @@ class _BarrioFatimaState extends State<BarrioFatima> {
       'marcado': false,
     },
     {
+      'nombre': 'Romero De Bolla Celia Concepcion',
+      'cedula': '839.976',
+      'mesa': '7',
+      'marcado': false,
+    },
+    {
       'nombre': 'Romero De Fernandez Maria Eulalia',
       'cedula': '838.808',
       'mesa': '7',
@@ -177,6 +195,12 @@ class _BarrioFatimaState extends State<BarrioFatima> {
       'nombre': 'Romero Ruiz Zully Yolanda',
       'cedula': '6.983.418',
       'mesa': '7',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Rotela Timoteo',
+      'cedula': '2.828.770',
+      'mesa': '8',
       'marcado': false,
     },
     {
@@ -218,6 +242,12 @@ class _BarrioFatimaState extends State<BarrioFatima> {
     {
       'nombre': 'Ullon Acosta Leticia Genoveva',
       'cedula': '2.079.108',
+      'mesa': '8',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Valdez Karen',
+      'cedula': '4.498.668',
       'mesa': '8',
       'marcado': false,
     },

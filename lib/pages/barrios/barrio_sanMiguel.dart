@@ -52,6 +52,12 @@ class _BarrioSanMiguelState extends State<BarrioSanMiguel> {
       'marcado': false,
     },
     {
+      'nombre': 'Cabrera Griffith Fabio Sebastian',
+      'cedula': '8.502.643',
+      'mesa': '2',
+      'marcado': false,
+    },
+    {
       'nombre': 'Dejesus De Vergara Ignacia',
       'cedula': '3.408.091',
       'mesa': '3',
@@ -108,6 +114,12 @@ class _BarrioSanMiguelState extends State<BarrioSanMiguel> {
     {
       'nombre': 'Paredez Velozo Victoriano',
       'cedula': '970.398',
+      'mesa': '7',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Peralta De Rodriguez Maria Elena',
+      'cedula': '2.251.008',
       'mesa': '7',
       'marcado': false,
     },

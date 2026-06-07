@@ -12,6 +12,12 @@ class BarrioSanCaye extends StatefulWidget {
 class _BarrioSanCayeState extends State<BarrioSanCaye> {
   final List<Map<String, dynamic>> _votantes = [
     {
+      'nombre': 'Avalo Vazquez Benito',
+      'cedula': '3.978.375',
+      'mesa': '1',
+      'marcado': false,
+    },
+    {
       'nombre': 'Fernandez Florentin Fabian',
       'cedula': '5.734.914',
       'mesa': '3',

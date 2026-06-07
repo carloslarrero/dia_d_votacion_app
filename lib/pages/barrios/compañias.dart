@@ -29,6 +29,24 @@ class _CompaniasState extends State<Companias> {
       'marcado': false,
     },
     {
+      'nombre': 'Amarilla Bolla Sixto Joel - CP',
+      'cedula': '2.962.128',
+      'mesa': '1',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Amarilla Maciel Norma Graciela - CP',
+      'cedula': '2.941.755',
+      'mesa': '1',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Acuña Alvarez Fidel - YT',
+      'cedula': '2.976.038',
+      'mesa': '1',
+      'marcado': false,
+    },
+    {
       'nombre': 'Barreto Fretes Victor Hugo - SR',
       'cedula': '4.906.379',
       'mesa': '2',
@@ -59,9 +77,45 @@ class _CompaniasState extends State<Companias> {
       'marcado': false,
     },
     {
+      'nombre': 'Cabral Ortiz Mirna Beatriz - SR',
+      'cedula': '3.617.290',
+      'mesa': '2',
+      'marcado': false,
+    },
+    {
       'nombre': 'Caceres Aranda Sunilda - SF',
       'cedula': '2.930.766',
       'mesa': '2',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Cardozo Llanes Nilda Marisol - KP',
+      'cedula': '3.917.674',
+      'mesa': '2',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Cuenca Cardozo Cristina Belen - KP',
+      'cedula': '6.574.357',
+      'mesa': '3',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Cuenca Cardozo Rosa Isabel - KP',
+      'cedula': '7.314.950',
+      'mesa': '3',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Cuenca Cardozo Silvio Ariel - KP',
+      'cedula': '7.312.761',
+      'mesa': '3',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Cuenca Espinoza Silvio - KP',
+      'cedula': '1.980.199',
+      'mesa': '3',
       'marcado': false,
     },
     {
@@ -73,6 +127,24 @@ class _CompaniasState extends State<Companias> {
     {
       'nombre': 'Espinola De Valdez Maria Antonia - SR',
       'cedula': '2.380.437',
+      'mesa': '3',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Fernandez Gimenez Fabian - SRO',
+      'cedula': '5.941.535',
+      'mesa': '3',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Fernandez Gimenez Isacio - SRO',
+      'cedula': '4.863.271',
+      'mesa': '3',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Ferreira Martinez Manuel Ignacio - AY',
+      'cedula': '4.498.800',
       'mesa': '3',
       'marcado': false,
     },
@@ -91,6 +163,12 @@ class _CompaniasState extends State<Companias> {
     {
       'nombre': 'Franco Ever Emilio - SR',
       'cedula': '6.284.904',
+      'mesa': '3',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Franco Diaz Clara Rosa - SR',
+      'cedula': '6.679.405',
       'mesa': '3',
       'marcado': false,
     },
@@ -119,6 +197,12 @@ class _CompaniasState extends State<Companias> {
       'marcado': false,
     },
     {
+      'nombre': 'Gaona Vera Graciela - AY',
+      'cedula': '5.838.616',
+      'mesa': '4',
+      'marcado': false,
+    },
+    {
       'nombre': 'Gauto Eusebio Asuncion - SR',
       'cedula': '1.083.034',
       'mesa': '4',
@@ -143,8 +227,44 @@ class _CompaniasState extends State<Companias> {
       'marcado': false,
     },
     {
+      'nombre': 'Lujan Franco Amanda Dejesus - CP',
+      'cedula': '3.546.378',
+      'mesa': '5',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Lujan Franco Noelia Dejesus - CP',
+      'cedula': '8.222.624',
+      'mesa': '5',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Maciel Hector Daniel - AY',
+      'cedula': '6.603.773',
+      'mesa': '5',
+      'marcado': false,
+    },
+    {
       'nombre': 'Ortiz Allende Victor Luis - SR',
       'cedula': '1.279.102',
+      'mesa': '6',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Oribe Godoy Maria Natividad - KP',
+      'cedula': '3.512.449',
+      'mesa': '6',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Oribe Oribe Juan De La Cruz - KP',
+      'cedula': '2.362.485',
+      'mesa': '6',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Oribe Oribe Lorenzo Luz - KP',
+      'cedula': '3.841.670',
       'mesa': '6',
       'marcado': false,
     },
@@ -152,6 +272,18 @@ class _CompaniasState extends State<Companias> {
       'nombre': 'Romero Franco Rosa Secundina - SR',
       'cedula': '5.129.183',
       'mesa': '7',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Sanabria Acuña Anibal Sebastian - SF',
+      'cedula': '5.607.475',
+      'mesa': '8',
+      'marcado': false,
+    },
+    {
+      'nombre': 'Sanabria Acuña Martina Marilin - SF',
+      'cedula': '5.127.481',
+      'mesa': '8',
       'marcado': false,
     },
     {
